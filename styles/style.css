@@ -1,6 +1,6 @@
 body {
-  color: black;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
   box-sizing: border-box;
 }
 
@@ -8,15 +8,16 @@ hr {
   width: 95px;
   margin: 0 0 30px;
   border-width: 4px;
-  border-color: white;
+  border-color: #ff4d57;
 }
 
-p {
-  font-family: 'Gentium', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 0;
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+a:hover {
+  cursor: pointer;
   color: #424250;
 }
 
@@ -30,12 +31,132 @@ p {
   padding-right: 0;
 }
 
+.img-container {
+  height: 325px;
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  height: 100%;
+}
+
 .main-container {
-  background-color: white;
+  background-color: #fff;
   max-width: 850px;
 }
 
-/*skills*/
+
+/* ======================
+        TYPOGRAPHY
+======================= */
+
+body {
+  font-family: 'Gentium', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #252525;
+  font-family: 'Gentium', sans-serif;
+  font-weight: 700;
+  font-variant-ligatures: common-ligatures;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  color: #424250;
+}
+
+/* ======================
+    SPACING & ALIGNMENT
+======================= */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* ======================
+       ABOUT ME
+======================= */
+
+h2.title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 6px 0;
+  letter-spacing: 1.2px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h2.title:after {
+  content: "";
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border-bottom: 4px solid #ff4d57;;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+.main-name {
+  /* position: absolute;
+  top: 20px;
+  left: 10px; */
+  font-size: 54px;
+}
+
+.summary-container {
+  padding-top: 20px;
+}
+
+.summary-text {
+  padding-right: 15px;
+}
+
+.summary-container h3 {
+  margin-bottom: 20px;
+}
+
+.summary-container p {
+  margin-bottom: 10px;
+}
+
+.summary-container a {
+  font-weight: 500;
+}
+
+/* =====================================
+          SKILL STACK
+======================================= */
+
 
 .skills h5 {
   margin-bottom: 10px;
@@ -46,7 +167,9 @@ p {
   padding: 0 5px;
 }
 
-/*contact information*/
+/* =====================================
+          CONTACT & LINKS
+======================================= */
 
 .link-container {
   background-color: #fff;
@@ -67,7 +190,10 @@ p {
   border-radius: 2px;
 }
 
-/*employment*/
+
+/* =====================================
+            EMPLOYMENT
+======================================= */
 
 .employment-container {
   padding-top: 0;
@@ -98,7 +224,11 @@ section.employment a {
   text-decoration: underline;
 }
 
-/*projects*/
+
+
+/* =====================================
+              PROJECTS
+======================================= */
 
 .project {
   max-width: 428px;
@@ -175,7 +305,9 @@ a.button-nested {color: #fff; text-decoration: none; -webkit-transform: skew(-10
 a.button-nested:hover { color: #fff; background-color: #00a6cc;}
 a.button-nested:hover::after {border-color: #00a6cc transparent transparent transparent;}
 
-/*footer*/
+/* =====================================
+          FOOTER
+======================================= */
 
 .footer {
   padding: 10px 0 20px;
@@ -190,4 +322,81 @@ a.button-nested:hover::after {border-color: #00a6cc transparent transparent tran
 .love {
   color: #ff4d57;
   font-size: 12px;
+}
+
+/* =====================================
+            MEDIA QUERIES
+======================================= */
+
+@media screen and (max-width: 480px) {
+  .main-name {
+    font-size: 45px;
+  }
+
+  .summary-container h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .github-corner {
+    display: none;
+  }
+
+  .img-container {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .main-name {
+    text-align: center;
+  }
+
+  .summary-container h3 {
+    text-align: center;
+  }
+
+  .summary-container {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media print {
+
+}
+
+/* =====================================
+            GITHUB CORNER LINK
+======================================= */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
 }
