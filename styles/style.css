@@ -50,21 +50,19 @@ a:hover {
         TYPOGRAPHY
 ======================= */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #252525;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-variant-ligatures: common-ligatures;
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: 1.2;
 }
 
 p {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -95,6 +93,7 @@ p {
 .card {
   padding: 10px;
   background-color: white;
+  border: none;
 }
 
 /* ======================
@@ -109,6 +108,10 @@ h2.title {
   text-align: left;
   overflow: hidden;
   white-space: nowrap;
+
+  background-color: #CBCBCB;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 h2.title:after {
@@ -117,7 +120,9 @@ h2.title:after {
   display: inline-block;
   width: 100%;
   vertical-align: middle;
-  border-bottom: 4px solid #424250;
+  /*border-bottom: 4px solid #424250;*/
+
+  /*^^ that is for the solid line that goes to end of titles*/
   overflow: hidden;
   justify-content: space-around;
 }
@@ -149,14 +154,7 @@ h2.title:after {
 /* =====================================
           SKILL STACK
 ======================================= */
-.skills h5 {
-  margin-bottom: 10px;
-  padding: 0 5px;
-}
 
-.skills p {
-  padding: 0 5px;
-}
 
 /* =====================================
           CONTACT & LINKS
@@ -182,128 +180,12 @@ h2.title:after {
 /* =====================================
             EMPLOYMENT
 ======================================= */
-.employment-container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
-section.employment {
-  margin-bottom: 20px;
-}
-
-section.employment h4 {
-  padding: 10px 0 8px 0;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-section.employment h5 {
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-section.employment p {
-  margin: 5px 0;
-  padding: 5px 0;
-}
-
-.employment-link {
-  color: #424250;
-  float: right;
-  text-decoration: none;
-}
-
-.employment-link a {
-  color: #424250;
-}
-
-.employment-link a:hover {
-  color: #252525;
-}
 
 /* =====================================
               PROJECTS
 ======================================= */
-.project {
-  max-width: 428px;
-  margin: 0 auto 10px;
-}
 
-.projects img {
-  max-width: 100%;
-}
-
-.projects h5 {
-  margin: 5px 0;
-}
-
-.project-date {
-  font-weight: 500;
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-
-.projects p {
-  margin-bottom: 5px;
-}
-
-.project-button {
-  padding: 2px 5px;
-  text-transform: uppercase;
-  background-color: #252525;
-  color: white;
-  height: 17px;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-a.project-button {
-  color: white;
-  text-decoration: none;
-  -webkit-transform: skew(-10deg, 0);
-}
-
-a.project-button:hover {
-  color: white;
-  background-color: #424250;
-}
-
-.button-nested {
-  padding: 2px 0 2px 10px;
-  text-transform: uppercase;
-  background-color: #00bce2;
-  color: white;
-  height: 17px;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-.button-nested::after {
-  content: "";
-  position: relative;
-  left: 7px;
-  top: 17px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 19px 7px 0 0;
-  border-color: #00bce2 transparent transparent transparent;
-}
-
-a.button-nested {
-  color: white;
-  text-decoration: none;
-  -webkit-transform: skew(-10deg, 0);
-}
-
-a.button-nested:hover {
-  color: white;
-  background-color: #00a6cc;
-}
-
-a.button-nested:hover::after {
-  border-color: #00a6cc transparent transparent transparent;
-}
 
 /* =====================================
           FOOTER

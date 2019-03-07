@@ -1,0 +1,81 @@
+.project {
+  max-width: 428px;
+  margin: 0 auto 10px;
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.projects h5 {
+  margin: 5px 0;
+}
+
+.project-date {
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.projects p {
+  margin-bottom: 5px;
+}
+
+.project-button {
+  padding: 2px 5px;
+  text-transform: uppercase;
+  background-color: #252525;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+   -webkit-transform: skewX(-20deg);
+}
+
+a.project-button {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: skew(-10deg, 0);
+}
+
+a.project-button:hover {
+  color: white;
+  background-color: #424250;
+}
+
+.button-nested {
+  padding: 2px 0 2px 10px;
+  text-transform: uppercase;
+  background-color: #00bce2;
+  color: white;
+  height: 17px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.button-nested::after {
+  content: "";
+  position: relative;
+  left: 7px;
+  top: 17px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19px 7px 0 0;
+  border-color: #00bce2 transparent transparent transparent;
+}
+
+a.button-nested {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: skew(-10deg, 0);
+}
+
+a.button-nested:hover {
+  color: white;
+  background-color: #00a6cc;
+}
+
+a.button-nested:hover::after {
+  border-color: #00a6cc transparent transparent transparent;
+}

@@ -1,0 +1,32 @@
+.employment-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+section.employment {
+  margin-bottom: 20px;
+}
+
+section.employment h4 {
+  padding: 10px 0 8px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+section.employment h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #424250;
+
+}
+
+section.employment p {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.employment-link {
+  color: #424250;
+  float: right;
+}
