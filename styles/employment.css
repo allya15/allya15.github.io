@@ -30,3 +30,27 @@ section.employment p {
   color: #424250;
   float: right;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.employment-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.company-title {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.jobs-role {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
