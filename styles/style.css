@@ -1,45 +1,45 @@
-body {
+/* body {
   color: white;
   background-color: white;
   box-sizing: border-box;
-}
+} */
 
-hr {
+/* hr {
   width: 95px;
   margin: 0 0 30px;
   border-width: 4px;
   border-color: #424250;
-}
+} */
 
 a {
   text-decoration: none;
   color: #252525;
 }
 
-a:hover {
+/* a:hover {
   cursor: pointer;
   color: #424250;
 }
 
-.row {
+/* .row {
   margin-right: 0;
   margin-left: 0;
-}
+} */ */
 
-.container {
+/* .container {
   padding-left: 0;
   padding-right: 0;
-}
+} */
 
-.img-container {
+/* .img-container {
   height: 325px;
   overflow: hidden;
-}
+} */
 
-.img-container img {
+/* .img-container img {
   display: block;
   height: 100%;
-}
+} */
 
 .main-container {
   background-color: white;
@@ -99,11 +99,14 @@ p {
 /* ======================
        ABOUT ME
 ======================= */
-h2.title {
-  font-size: 24px;
-  line-height: 24px;
+h2 {
+  font-size: 28px;
+  line-height: 28px;
   font-weight: 700;
-  margin: 6px 0;
+}
+
+.grey-title {
+  /* margin: 6px 0; */
   letter-spacing: 1.2px;
   text-align: left;
   overflow: hidden;
@@ -112,19 +115,6 @@ h2.title {
   background-color: #CBCBCB;
   border-radius: 4px;
   padding: 5px;
-}
-
-h2.title:after {
-  content: "";
-  margin-left: 10px;
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-  /*border-bottom: 4px solid #424250;*/
-
-  /*^^ that is for the solid line that goes to end of titles*/
-  overflow: hidden;
-  justify-content: space-around;
 }
 
 .main-name {
@@ -137,6 +127,7 @@ h2.title:after {
 
 .summary-text {
   padding-right: 15px;
+  line-height: 1.6;
 }
 
 .summary-container h3 {
@@ -151,10 +142,6 @@ h2.title:after {
   font-weight: 500;
 }
 
-/* =====================================
-          SKILL STACK
-======================================= */
-
 
 /* =====================================
           CONTACT & LINKS
@@ -168,37 +155,16 @@ h2.title:after {
   color: #252525;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .contact-list > li {
   display: inline-flex;
   padding-top: 10px;
   border-radius: 2px;
+  margin-right: 20px;
 }
 
-/* =====================================
-            EMPLOYMENT
-======================================= */
-
-
-/* =====================================
-              PROJECTS
-======================================= */
-
-
-/* =====================================
-          FOOTER
-======================================= */
-.footer {
-  padding: 10px 0 20px;
-  text-align: center;
-}
-
-.footer p {
-  color: #848484;
-  font-size: 14px;
-}
 
 /* =====================================
             MEDIA QUERIES
@@ -246,7 +212,7 @@ h2.title:after {
 /* =====================================
             GITHUB CORNER LINK
 ======================================= */
-.github-corner:hover .octo-arm {
+/* .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
 
@@ -269,4 +235,23 @@ h2.title:after {
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
+} */
+
+/* =====================================
+            OTHER
+======================================= */
+
+.company-row {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 10px 0 5px 0; */
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 20px;
 }
